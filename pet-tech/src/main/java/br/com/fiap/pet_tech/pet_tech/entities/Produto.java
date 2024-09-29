@@ -1,4 +1,4 @@
-package br.com.fiap.pet_tech.pet_tech;
+package br.com.fiap.pet_tech.pet_tech.entities;
 
 import jakarta.persistence.*;
 import java.util.Objects;
@@ -16,7 +16,7 @@ public class Produto {
     private double preco;
     private String urlImagem;
 
-    public Produto() {}
+    public Produto(UUID id, String nome, String descricao, double preco, String s) {}
     public Produto(String nome, String descricao, double preco, String urlImagem) {
         this.nome = nome;
         this.descricao = descricao;
