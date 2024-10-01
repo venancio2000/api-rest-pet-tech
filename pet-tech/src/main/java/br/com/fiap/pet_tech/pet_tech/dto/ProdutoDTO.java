@@ -7,9 +7,7 @@ public record ProdutoDTO(
         String nome,
         String descricao,
         double preco,
-        String urlDaimage
+        String urlDaimagem
 
 ) {
-
-
 }

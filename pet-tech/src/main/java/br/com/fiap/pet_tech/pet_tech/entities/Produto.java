@@ -14,15 +14,18 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
-    private String urlImagem;
+    private String urlDaImagem;
 
-    public Produto(UUID id, String nome, String descricao, double preco, String s) {}
-    public Produto(String nome, String descricao, double preco, String urlImagem) {
+    public Produto() {
+
+    }
+    public Produto(UUID id, String nome, String descricao, double preco, String urlDaImagem) {
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.urlImagem = urlImagem;
+        this.urlDaImagem = urlDaImagem;
     }
+
 
     public UUID getId() {
         return id;
@@ -56,12 +59,12 @@ public class Produto {
         this.preco = preco;
     }
 
-    public String getUrlImagem() {
-        return urlImagem;
+    public String getUrlDaImagem() {
+        return urlDaImagem;
     }
 
-    public void setUrlImagem(String urlImagem) {
-        this.urlImagem = urlImagem;
+    public void setUrlDaImagem(String urlImagem) {
+        this.urlDaImagem = urlImagem;
     }
 
     @Override
@@ -84,7 +87,7 @@ public class Produto {
                 ", nome='" + nome + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", preco=" + preco +
-                ", urlImagem='" + urlImagem + '\'' +
+                ", urlImagem='" + urlDaImagem + '\'' +
                 '}';
     }
 }

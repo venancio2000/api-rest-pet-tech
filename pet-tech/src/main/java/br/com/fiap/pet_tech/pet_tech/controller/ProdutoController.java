@@ -33,7 +33,7 @@ public class ProdutoController {
     @PostMapping
     public ResponseEntity<ProdutoDTO> save(@RequestBody ProdutoDTO produtoDTO) {
         produtoDTO = service.save(produtoDTO);
-        return ResponseEntity.status(HttpStatusCode.valueOf(201)).body(produtoDTO);
+        return ResponseEntity.status(201).body(produtoDTO);
     }
     @PutMapping("/{id}")
     public ResponseEntity<ProdutoDTO> update(@PathVariable UUID id, @RequestBody ProdutoDTO produtoDTO) {

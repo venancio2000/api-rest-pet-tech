@@ -43,7 +43,7 @@ public class ProdutoService {
             buscaProduto.setNome(produtoDTO.nome());
             buscaProduto.setDescricao(produtoDTO.descricao());
             buscaProduto.setPreco(produtoDTO.preco());
-            buscaProduto.setUrlImagem(produtoDTO.urlDaimage());
+            buscaProduto.setUrlDaImagem(produtoDTO.urlDaimagem());
             buscaProduto = repo.save(buscaProduto);
 
             return toProdutoDTO(buscaProduto);
@@ -63,7 +63,7 @@ public class ProdutoService {
                 produto.getNome(),
                 produto.getDescricao(),
                 produto.getPreco(),
-                produto.getUrlImagem()
+                produto.getUrlDaImagem()
         );
     }
     private Produto toProduto(ProdutoDTO produtoDTO) {
@@ -72,7 +72,7 @@ public class ProdutoService {
                 produtoDTO.nome(),
                 produtoDTO.descricao(),
                 produtoDTO.preco(),
-                produtoDTO.urlDaimage()
+                produtoDTO.urlDaimagem()
         );
     }
 
